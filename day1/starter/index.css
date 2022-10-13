@@ -1,0 +1,44 @@
+body{
+    margin: auto;
+    background-color: rgb(252, 222, 186);
+}
+header{
+    text-align: center;
+    text-transform: capitalize;
+    
+}
+.main-container {
+    padding-left: 20px;
+    display: grid;
+    grid-template-columns: repeat(5,auto);
+    gap: 10px;;
+}
+.card-container {
+    border: 1px solid black;
+    border-radius: 20px;
+    background: bisque;
+    padding-bottom: 10px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    width: 320px;
+
+}
+
+.details {
+    margin-left: 30px;
+}
+.user-img{
+    width: 153px;
+}
+
+.label {
+    font-weight: 700;
+}
+
+.name-details {
+    font-size: 15px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+}
+
