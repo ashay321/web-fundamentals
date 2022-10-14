@@ -1,0 +1,14 @@
+.user-details, .user-details-header  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 40px;
+}
+
+.user-details-header {
+    text-decoration: underline;
+}
+
+.user-details {
+    color: rgb(87, 86, 85);
+}
