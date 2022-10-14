@@ -40,12 +40,12 @@ export default class InputForm extends PureComponent {
                         </div>
 
                         <div className='input-field'>
-                            <div className='input-field-label'>Degree:</div>
+                            <div className='input-field-label'>Mobile:</div>
                             <Input type="text" placeholder='Mobile' value={this.state.mobileNumber} onChange={(e)=>{this.setState({mobileNumber: e.target.value})}}/>
                         </div>
 
                         <div className='input-field'>
-                            <div className='input-field-label'>Degree:</div>
+                            <div className='input-field-label'>BloodGrp:</div>
                             <Input type="text" placeholder='Blood group' value={this.state.bloodGrp} onChange={(e)=>{this.setState({bloodGrp: e.target.value})}}/>
                         </div>
 
