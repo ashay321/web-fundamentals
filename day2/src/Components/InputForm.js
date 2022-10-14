@@ -9,10 +9,17 @@ export default class InputForm extends PureComponent {
         this.state = {
             username: "", mobileNumber: "", standard: "", bloodGrp: ""
         }
-        // this.form = Form.useForm();
     }
 
     handleSubmit = () => {
+        if(this.state.username === null || this.state.mobileNumber === null || this.state.standard === null || this.state.bloodGrp === null) {
+            alert("Some fields are empty!!");
+            return;
+        }
+        if(this.state.username === "" || this.state.mobileNumber === "" || this.state.standard === "" || this.state.bloodGrp === "") {
+            alert("Some fields are empty!!");
+            return;
+        }
         this.props.handleSubmit({
             username: this.state.username, 
             mobileNumber: this.state.mobileNumber, 
@@ -20,7 +27,6 @@ export default class InputForm extends PureComponent {
             bloodGrp: this.state.bloodGrp
         });
         this.setState({username: "", mobileNumber: "", standard: "", bloodGrp: ""});
-        // this.form.resetFields();
     }
     
     render() {
