@@ -5,8 +5,20 @@
 }
 .input-form {
     background-color: rgb(237, 238, 238);
-    max-width: 400px;
+    max-width: 450px;
     padding: 20px 20px;
     margin: 20px 20px;
     border-radius: 20px;
+}
+
+.input-field {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.input-field-label {
+    margin-right: 5px;
 }
