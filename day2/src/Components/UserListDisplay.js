@@ -19,7 +19,7 @@ export default class UserDisplayList extends Component {
         {   
             this.props.users.map(element => (
                 
-                <li key={element.name}>
+                <li key={element.mobileNumber}>
                   <div className='user-details'>
                     <div>{element.name}</div>
                     <div>{element.standard}</div>
