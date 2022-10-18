@@ -1,0 +1,31 @@
+.app-body {
+    display: flex;
+    justify-content: center;
+    background-image: url("https://images.unsplash.com/photo-1477601263568-180e2c6d046e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+    height: 900px;
+}
+
+.todo-container {
+    background: rgba(255, 255, 255, 0.5);
+    min-height: 200px;
+    min-width: 600px;
+    max-width: 400px;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin-top: 40px;
+    padding: 20px 10px;
+
+}
+
+.todo-container-header-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10px;
+}
+
+.todo-container-header-title {
+    font-size: 40px;
+    color: red;
+    text-decoration: underline;
+}

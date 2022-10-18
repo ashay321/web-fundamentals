@@ -1,0 +1,11 @@
+.todo-item {
+    /* background-color: rgb(165, 164, 164); */
+    margin-top: 20px;
+}
+
+.task-button {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+    width: 50%;
+}

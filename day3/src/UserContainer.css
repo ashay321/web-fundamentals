@@ -1,0 +1,26 @@
+.app-body {
+    display: flex;
+    justify-content: center;
+}
+
+.user-container {
+    min-height: 200px;
+    min-width: 1000px;
+    max-width: 1000px;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin-top: 40px;
+    padding: 20px 10px;
+}
+
+.user-container-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.user-container-header-title {
+    font-size: 40px;
+    color: red;
+    text-decoration: underline;
+}

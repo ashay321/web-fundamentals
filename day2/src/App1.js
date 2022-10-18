@@ -1,7 +1,6 @@
 import React, { PureComponent } from 'react'
 import InputForm from './Components/InputForm';
 import UserListDisplay from './Components/UserListDisplay';
-
 export default class App1 extends PureComponent {
 
     constructor(){

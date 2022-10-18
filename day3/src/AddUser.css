@@ -1,0 +1,25 @@
+.todo-container-header {
+    /* background-color: rgb(170, 168, 166); */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-radius: 20px;
+    margin-top: 10px;
+    min-height: 40px;
+    padding: 10px 10px;
+}
+
+.task-input {
+    display: flex;
+    flex: 2;
+    background-color: bisque;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+.task-buttons{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+    width: 40%;
+}
