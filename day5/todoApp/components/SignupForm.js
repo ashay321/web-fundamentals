@@ -18,6 +18,7 @@ const SignupForm = ({ navigation }) => {
   const [email, onChangeEmail] = React.useState(null);
   const [password, onChangePassword] = React.useState(null);
   const [emailValidError, onChangeEmailValidError] = React.useState('');
+  const [passwordValidError, onChangePasswordValidError] = React.useState('');
   const [passwordVisibility, onChangePasswordVisibility] = React.useState(true);
 
     const handleValidEmail = val => {
@@ -31,6 +32,21 @@ const SignupForm = ({ navigation }) => {
             onChangeEmailValidError('');
         }
     };
+
+    const validatePassword = (text) => {
+        let reg = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[#$@!%&*?])[A-Za-z\d#$@!%&*?]{8,16}$/;
+
+        if (text.length === 0) {
+            onChangePasswordValidError('')
+        }
+
+        else if (reg.test(text) === true) {
+            onChangePasswordValidError('');
+        }
+        else {
+            onChangePasswordValidError('Enter Valid Password');
+        }
+    }
 
   return (
 
@@ -68,7 +84,10 @@ const SignupForm = ({ navigation }) => {
                 <View style={styles.inputContainer}>
                     <TextInput
                         style={styles.input}
-                        onChangeText={onChangePassword}
+                        onChangeText={(value) => {
+                            onChangePassword(value);
+                            validatePassword(value);
+                        }}
                         value={password}
                         placeholder="Password"
                         secureTextEntry={passwordVisibility}
@@ -82,6 +101,9 @@ const SignupForm = ({ navigation }) => {
                     </TouchableWithoutFeedback>
                     
                 </View>
+                
+                {passwordValidError ? <Text style={styles.errorText}>{passwordValidError}</Text> : null}
+                
                 
                 <View style={styles.buttonContainer}>
                     <TouchableOpacity 
@@ -103,6 +125,8 @@ const SignupForm = ({ navigation }) => {
                             navigation.navigate('Login')}
                     > Login</Text>
                 </Text>
+
+                
                 
             </View>
         </View>
